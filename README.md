@@ -52,7 +52,9 @@ terminal theme ([Ptyxis](https://github.com/deepwick/ptyxis),
   devices) becomes bright yellow; Cyan (symlinks) becomes bright cyan; Orange
   (documents, help links) becomes bright red; Rose (archives) becomes Red, the
   same as broken links; Comment becomes Muted; and the diff viewer uses solid
-  Green, Red and Blue backgrounds with Overlay text.
+  Green, Red and Blue backgrounds with Overlay text. Text drawn in Background
+  (gauge, reverse, focused error buttons, found bookmarks) becomes Overlay, and
+  changed text within a changed diff line uses bright blue (Light Blue).
 
 Tested with GNU Midnight Commander 4.8.33.
 
