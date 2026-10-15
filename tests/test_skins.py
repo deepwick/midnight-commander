@@ -175,5 +175,13 @@ def test_mc_16_color_skin_without_colorterm(tmp_path):
     assert style_containing(out, "run.sh")["fg"] == "ansi:2"
 
 
+def test_buttonbar_on_surface():
+    bar = skin("deepwick.ini")["buttonbar"]
+    assert bar["hotkey"] == "dw_gold;dw_surface"
+    assert bar["button"] == "dw_fg;dw_surface"
+    bar16 = skin("deepwick16.ini")["buttonbar"]
+    assert (bar16["hotkey"], bar16["button"]) == ("yellow;black", "lightgray;black")
+
+
 def test_port_conventions():
     assert check_port(REPO, PALETTE.allowed_hex()) == []

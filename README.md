@@ -43,12 +43,16 @@ terminal theme ([Ptyxis](https://github.com/deepwick/ptyxis),
   executables bold Green, symlinks Cyan, broken links Red, devices and FIFOs
   Gold, archives Rose, media and images Magenta, documents Orange, source
   Yellow, temp files Muted. mc colors the whole row, not just the name.
-- Dialogs, menus and the status bar sit on Surface; the cursor row is on
+- Dialogs, menus, the status bar and the button bar sit on Surface; the cursor row is on
   Selection; marked files are bold Yellow.
 - The internal editor's syntax colors come from mc's syntax files, not the
   skin, so they are not themed.
-- In `deepwick16`, Gold becomes yellow and Cyan becomes bright cyan, because
-  they have no ANSI slot.
+- `deepwick16` uses the nearest ANSI slot where Deepwick has none: Surface
+  becomes Overlay; Selection becomes Blue with Overlay text; Gold (hotkeys,
+  devices) becomes bright yellow; Cyan (symlinks) becomes bright cyan; Orange
+  (documents, help links) becomes bright red; Rose (archives) becomes Red, the
+  same as broken links; Comment becomes Muted; and the diff viewer uses solid
+  Green, Red and Blue backgrounds with Overlay text.
 
 Tested with GNU Midnight Commander 4.8.33.
 
